@@ -1,0 +1,103 @@
+﻿<link href="~/css/animate.css" rel="stylesheet" />
+<link href="~/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/css/font-awesome.min.css" rel="stylesheet" />
+<link href="~/css/jquery.easy-pie-chart.css" rel="stylesheet" />
+<link href="~/css/main.css" rel="stylesheet" />
+<link href="~/css/simple-sidebar.css" rel="stylesheet" />
+<link href="~/css/styles-blue.css" rel="stylesheet" />
+<link href="~/css/styles-orange.css" rel="stylesheet" />
+<link href="~/css/styles-red.css" rel="stylesheet" />
+<link href="~/css/styles.css" rel="stylesheet" />
+<script src="~/js/bootstrap.min.js"></script>
+<script src="~/js/common.js"></script>
+<script src="~/js/jquery-1.11.1.min.js"></script>
+
+
+            <section class="well " style="margin:0 auto">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Notification</h2>
+                        </div>
+                        <div class="col-md-6">
+                            <ol class="breadcrumb">
+                                <li>@Html.ActionLink("Profile", "Profile", "Home")</li>
+                                <li>@Html.ActionLink("Home", "Home", "Home")</li>
+                                <li>@Html.ActionLink("Messages", "msg", "Home")</li>
+                                <li>@Html.ActionLink("Notification", "noti", "Home")</li>
+                                <li>@Html.ActionLink("Settings", "sett", "Home")</li>
+                                <li>@Html.ActionLink("LogOut", "Login", "Home")</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <div id="sidebar-wrapper">
+
+                <ul class="sidebar-nav" style="border:dashed">
+                    <li class="main-search">
+                        <form>
+                            <input type="text" class="form-control" placeholder="Search here" />
+                            <span class="fa-fa-search"></span>
+                        </form>
+                    </li>
+                    <li><a href="#GettingStarted">Home</a></li>
+                    <li> <a href="#MainStructure">Profile <span class="fa-fa-angle-down"></span></a></li>
+                    <ul>
+                        <li><a href="#BegOfPage">Edit Profile</a></li>
+                        <li><a href="#PageHead">Photos</a></li>
+                        <li><a href="#Header">Friends</a></li>
+                        <li><a href="#Sections">Family</a></li>
+                        <li> <a href="#Footer">Info</a></li>
+                    </ul>
+                    <li><a href="Message">Messages <span class="fa-fa-angle-down"></span></a></li>
+                    <ul>
+                        <li><a href="#Header">Facebook</a></li>
+                        <li><a href="#Sections">Twitter</a></li>
+                        <li> <a href="#Footer">Google+</a></li>
+                    </ul>
+                    <li> <a href="#Notification">Settings</a></li>
+                </ul>
+
+            </div>
+
+            <div style="float:right;border:solid; height:508px;width:250px;background-color:#585858">
+
+            </div>
+<div style=" height:508px;width:849px;float:right">
+    <div class="main-search">
+        <form>
+            <label>
+                Mehwish Khan: @DateTime.Now.ToUniversalTime();
+            </label>
+            <input type="button" style="width:848px; height:50px;" value="Likes the page The Hoorro Show"/>
+        </form>
+    </div>
+    <div class="main-search">
+        <form>
+            <label>
+                Umer Saeed: @DateTime.Now.ToUniversalTime();
+            </label>
+            <input type="button" style="width:848px; height:50px;" value="Comment on fb post" />
+        </form>
+    </div>
+    <div class="main-search">
+        <form>
+            <label>
+               Usman Naeem: @DateTime.Now.ToUniversalTime();
+            </label>
+            <input type="button" style="width:848px; height:50px;" value="Send you a game request" />
+        </form>
+    </div>
+    <div class="main-search">
+        <form>
+            <label>
+                Osama Owais: @DateTime.Now.ToUniversalTime();
+            </label>
+            <input type="button" style="width:848px; height:50px;" value="Likes your shared photo on twitter" />
+        </form>
+    </div>
+</div>

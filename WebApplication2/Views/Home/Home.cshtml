@@ -1,0 +1,389 @@
+﻿<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scoop Themes | Colupsus Landing Page Documentation">
+    <meta name="author" content="Scoop Themes">
+
+    @*<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">*@
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://fezvrasta.github.io/bootstrap-material-design/dist/css/bootstrap-material-design.css">
+    <link href="~/css/chat.css" rel="stylesheet" />
+    <link href="~/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/css/Sidebar.css" rel="stylesheet" />
+    <link href="~/dist/css/bootstrap-material-design.css" rel="stylesheet" />
+    <link href="~/dist/css/ripples.min.css" rel="stylesheet" />
+    <link href="~/dist/css/Bootstrap-social.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/css/Writepost.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+    <link href="~/css/simple-sidebar.css" rel="stylesheet" />
+    @*<link href="~/css/main.css" rel="stylesheet" />*@
+    <title>SSN</title>
+
+    @*<link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">*@
+    @*<link href="css/main.css" rel="stylesheet">*@
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+
+</head>
+
+<body >
+    @*<div class="container well" style="background-color:#585858; height:82px; min-width:980px">
+            <label style="font-size: 30px; color: white;  font-weight: bold; float:left"> Super Social Network &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</label>
+
+            <label style="font-size:15px; color:white;padding-left:30%"> Name Or Email: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</label>
+            <input class="" type="text" placeholder="Type your registered name" />
+           <br /> <label style="font-size:15px; color:white;padding-left:30%"> Password: &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</label>
+            <input type="password" placeholder="abc123" /> &nbsp; &nbsp;&nbsp;&nbsp;
+           @* <input type="button" value="Login" />
+
+        </div>*@
+    <div class="navbar navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar" style="color:black"></span>
+                    <span class="icon-bar" style="color:black"></span>
+                    <span class="icon-bar" style="color:black"></span>
+                </button>
+                <a class="navbar-brand" style="font-size: 30px; color: black;  font-weight: bold; float:left">Super Social Network</a>
+            </div>
+            <div class="navbar-collapse collapse navbar-responsive-collapse">
+
+                <form class="navbar-form navbar-left">
+                    @*<div class="form-group">
+                            <input type="text" class="form-control col-md-8" placeholder="Search">
+                        </div>*@
+                    
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li> @Html.ActionLink("Home", "Home", "Home")</li>
+                    <li>@Html.ActionLink("Profile", "Profile", "Home")</li>
+                    <li>@Html.ActionLink("Notifications", "noti", "Home")</li>
+                    <li>@Html.ActionLink("message", "msg", "Home")</li>
+                    <li>@Html.ActionLink("Settings", "sett", "Home")</li>
+                    <li>@Html.ActionLink("LogOut", "Login", "Home")</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="row">
+        <!-- uncomment code for absolute positioning tweek see top comment in css -->
+        <!-- <div class="absolute-wrapper"> </div> -->
+        <!-- Menu -->
+        <div class="side-menu">
+
+            @*<nav class="navbar navbar-default" role="navigation">*@
+                <!-- Brand and toggle get grouped for better mobile display -->
+                @*<div class="navbar-header">
+                    @*<div class="brand-wrapper">
+                        <!-- Hamburger -->
+                        <button type="button" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Brand -->
+                        <div class="brand-name-wrapper">
+                            <a class="navbar-brand" href="#">
+                                Brand
+                            </a>
+                        </div>
+                        <!-- Search -->
+                        <a data-toggle="collapse" href="#search" class="btn btn-default" id="search-trigger">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </a>
+                        <!-- Search body -->
+                        <div id="search" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <form class="navbar-form" role="search">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                    </div>
+                                    <button type="submit" class="btn btn-default "><span class="glyphicon glyphicon-ok"></span></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>*@
+                <!-- Main Menu -->
+                <div class="side-menu-container">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"><span class="glyphicon glyphicon-send"></span> Link</a></li>
+                        <li class="active"><a href="#"><span class="glyphicon glyphicon-plane"></span> Active Link</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-cloud"></span> Link</a></li>
+                        <!-- Dropdown-->
+                        <li class="panel panel-default" id="dropdown">
+                            <a data-toggle="collapse" href="#dropdown-lvl1">
+                                <span class="glyphicon glyphicon-user"></span> Friends List <span class="caret"></span>
+                            </a>
+                            <!-- Dropdown level 1 -->
+                            <div id="dropdown-lvl1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="#">Qadri's Daughter | <i class="fa fa-facebook"> | </i><i class="fa fa-google"></i></a></li>
+                                        <li><a href="#">Ramsha Khan | <i class="fa fa-google-plus-circle"> |</i><i class="fa fa-twitter"> |</i></a></li>
+                                        <li><a href="#">Rabab Meraj | <i class="fa fa-instagram"> |</i><i class="fa fa-linkedin"></i></a></li>
+                                        <!-- Dropdown level 2 -->
+                                        <li class="panel panel-default" id="dropdown">
+                                            <a data-toggle="collapse" href="#dropdown-lvl2">
+                                                <span class="glyphicon glyphicon-off"></span> Sub Level <span class="caret"></span>
+                                            </a>
+                                            <div id="dropdown-lvl2" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="nav navbar-nav">
+                                                        <li><a href="#">Link</a></li>
+                                                        <li><a href="#">Link</a></li>
+                                                        <li><a href="#">Link</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="panel panel-default" id="dropdown">
+                            <a data-toggle="collapse" href="#dropdown-lvl1">
+                                <span class="glyphicon glyphicon-envelope"></span> Chat List <span class="caret"></span>
+                            </a>
+                            <!-- Dropdown level 1 -->
+                            <div id="dropdown-lvl2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="#">Bill Gates | <i class="fa fa-facebook"> | </i><i class="fa fa-google"></i></a></li>
+                                        <li><a href="#">Steve Jobs | <i class="fa fa-facebook"> |</i><i class="fa fa-twitter"> |</i></a></li>
+                                        
+                                        <!-- Dropdown level 2 -->
+                    
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#"><span class="glyphicon glyphicon-signal"></span> Link</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            @*</nav>*@
+
+        </div>
+        <!-- Main Content -->
+        <div class="container-fluid">
+            <div  class="side-body">
+<div class="container">
+	<div class="row">
+		<h3>Status Upload Snipp</h3>
+	</div>
+    
+    <div class="row">
+    
+    <div class="container col-md-6">
+    						<div class="widget-area no-padding blank">
+								<div class=" container status-upload">
+									<form>
+										<textarea placeholder="What are you doing right now?" ></textarea>
+										<ul style="background-color:darkgray">
+											<li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Audio"><i class="fa fa-music"></i></a></li>
+											<li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Video"><i class="fa fa-video-camera"></i></a></li>
+											<li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Sound Record"><i class="fa fa-microphone"></i></a></li>
+											<li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Picture"><i class="fa fa-picture-o"></i></a></li>
+										</ul>
+										<button type="submit" class="btn btn-success green"><i class="fa fa-share"></i> Share</button>
+									</form>
+								</div><!-- Status Upload  -->
+							</div><!-- Widget Area -->
+						</div>
+        
+    </div>
+</div>
+                <div class="container">
+                    <div class="row chat-window col-xs-5 col-md-3" id="chat_window_1" style="margin-left:10px;">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading top-bar">
+                                    <div class="col-md-8 col-xs-8">
+                                        <h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span> Chat - Miguel</h3>
+                                    </div>
+                                    <div class="col-md-4 col-xs-4" style="text-align: right;">
+                                        <a href="#"><span id="minim_chat_window" class="glyphicon glyphicon-minus icon_minim"></span></a>
+                                        <a href="#"><span class="glyphicon glyphicon-remove icon_close" data-id="chat_window_1"></span></a>
+                                    </div>
+                                </div>
+                                <div class="panel-body msg_container_base">
+                                    <div class="row msg_container base_sent">
+                                        <div class="col-md-10 col-xs-10">
+                                            <div class="messages msg_sent">
+                                                <p>
+                                                    that mongodb thing looks good, huh?
+                                                    tiny master db, and huge document store
+                                                </p>
+                                                <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-xs-2 avatar">
+                                            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                                        </div>
+                                    </div>
+                                    <div class="row msg_container base_receive">
+                                        <div class="col-md-2 col-xs-2 avatar">
+                                            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                                        </div>
+                                        <div class="col-md-10 col-xs-10">
+                                            <div class="messages msg_receive">
+                                                <p>
+                                                    that mongodb thing looks good, huh?
+                                                    tiny master db, and huge document store
+                                                </p>
+                                                <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row msg_container base_receive">
+                                        <div class="col-md-2 col-xs-2 avatar">
+                                            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                                        </div>
+                                        <div class="col-xs-10 col-md-10">
+                                            <div class="messages msg_receive">
+                                                <p>
+                                                    that mongodb thing looks good, huh?
+                                                    tiny master db, and huge document store
+                                                </p>
+                                                <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row msg_container base_sent">
+                                        <div class="col-xs-10 col-md-10">
+                                            <div class="messages msg_sent">
+                                                <p>
+                                                    that mongodb thing looks good, huh?
+                                                    tiny master db, and huge document store
+                                                </p>
+                                                <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-xs-2 avatar">
+                                            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                                        </div>
+                                    </div>
+                                    <div class="row msg_container base_receive">
+                                        <div class="col-md-2 col-xs-2 avatar">
+                                            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                                        </div>
+                                        <div class="col-xs-10 col-md-10">
+                                            <div class="messages msg_receive">
+                                                <p>
+                                                    that mongodb thing looks good, huh?
+                                                    tiny master db, and huge document store
+                                                </p>
+                                                <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row msg_container base_sent">
+                                        <div class="col-md-10 col-xs-10 ">
+                                            <div class="messages msg_sent">
+                                                <p>
+                                                    that mongodb thing looks good, huh?
+                                                    tiny master db, and huge document store
+                                                </p>
+                                                <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-xs-2 avatar">
+                                            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer">
+                                    <div class="input-group">
+                                        <input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Write your message here..." />
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary btn-sm" id="btn-chat">Send</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script src="~/dist/js/material.min.js"></script>
+    <script src="~/dist/js/ripples.min.js"></script>
+    <script>
+
+        $.material.init();
+        $(function () {
+            //$('.navbar-toggle').click(function () {
+            //    $('.navbar-nav').toggleClass('slide-in');
+            //    $('.side-body').toggleClass('body-slide-in');
+            //    $('#search').removeClass('in').addClass('collapse').slideUp(200);
+
+            //    /// uncomment code for absolute positioning tweek see top comment in css
+            //    //$('.absolute-wrapper').toggleClass('slide-in');
+
+            //});
+
+            // Remove menu for searching
+            $('#search-trigger').click(function () {
+                $('.navbar-nav').removeClass('slide-in');
+                $('.side-body').removeClass('body-slide-in');
+
+                /// uncomment code for absolute positioning tweek see top comment in css
+                //$('.absolute-wrapper').removeClass('slide-in');
+
+            });
+        });
+        $(document).on('click', '.panel-heading span.icon_minim', function (e) {
+            var $this = $(this);
+            if (!$this.hasClass('panel-collapsed')) {
+                $this.parents('.panel').find('.panel-body').slideUp();
+                $this.addClass('panel-collapsed');
+                $this.removeClass('glyphicon-minus').addClass('glyphicon-plus');
+            } else {
+                $this.parents('.panel').find('.panel-body').slideDown();
+                $this.removeClass('panel-collapsed');
+                $this.removeClass('glyphicon-plus').addClass('glyphicon-minus');
+            }
+        });
+        $(document).on('focus', '.panel-footer input.chat_input', function (e) {
+            var $this = $(this);
+            if ($('#minim_chat_window').hasClass('panel-collapsed')) {
+                $this.parents('.panel').find('.panel-body').slideDown();
+                $('#minim_chat_window').removeClass('panel-collapsed');
+                $('#minim_chat_window').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+            }
+        });
+        $(document).on('click', '#new_chat', function (e) {
+            var size = $(".chat-window:last-child").css("margin-left");
+            size_total = parseInt(size) + 400;
+            alert(size_total);
+            var clone = $("#chat_window_1").clone().appendTo(".container");
+            clone.css("margin-left", size_total);
+        });
+        $(document).on('click', '.icon_close', function (e) {
+            //$(this).parent().parent().parent().parent().remove();
+            $("#chat_window_1").remove();
+        });
+        $(document).ready(function () {
+
+
+            $("[data-toggle=tooltip]").tooltip();
+        });
+
+    </script>
+
+</body>
+    

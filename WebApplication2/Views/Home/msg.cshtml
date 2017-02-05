@@ -1,0 +1,93 @@
+﻿<link href="~/css/animate.css" rel="stylesheet" />
+<link href="~/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/css/font-awesome.min.css" rel="stylesheet" />
+<link href="~/css/jquery.easy-pie-chart.css" rel="stylesheet" />
+<link href="~/css/main.css" rel="stylesheet" />
+<link href="~/css/simple-sidebar.css" rel="stylesheet" />
+<link href="~/css/styles-blue.css" rel="stylesheet" />
+<link href="~/css/styles-orange.css" rel="stylesheet" />
+<link href="~/css/styles-red.css" rel="stylesheet" />
+<link href="~/css/styles.css" rel="stylesheet" />
+<script src="~/js/bootstrap.min.js"></script>
+<script src="~/js/common.js"></script>
+<script src="~/js/jquery-1.11.1.min.js"></script>
+<section class="well " style="margin:0 auto">
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-6">
+                
+                <h2>Messages</h2>
+            </div>
+            <div class="col-md-6">
+                <ol class="breadcrumb">
+                    <li>@Html.ActionLink("Profile", "Profile", "Home")</li>
+                    <li>@Html.ActionLink("Home", "Home", "Home")</li>
+                    <li>@Html.ActionLink("Messages", "msg", "Home")</li>
+                    <li>@Html.ActionLink("Notification", "noti", "Home")</li>
+                    <li>@Html.ActionLink("Settings", "sett", "Home")</li>
+                    <li>@Html.ActionLink("LogOut", "Login", "Home")</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+@*<div style="float:left;border:solid;height:508px;min-width:250px;">*@
+    <div id="sidebar-wrapper">
+
+        <ul class="sidebar-nav" >
+            <li class="main-search">
+                <form>
+                    <input type="text" class="form-control" placeholder="Search here" />
+                    <span class="fa-fa-search"></span>
+                </form>
+            </li>
+            <li><a href="#GettingStarted">Mehwish Khan</a></li>
+            <li> <a href="#MainStructure">Aliya Ali <span class="fa-fa-angle-down"></span></a></li>
+           
+            <li><a href="Message">M.Umer <span class="fa-fa-angle-down"></span></a></li>
+            
+            <li> <a href="#Notification">Saad Khalid</a></li>
+            <li> <a href="#Notification">Nadia Sabir</a></li>
+            <li> <a href="#Notification">Arifa Naz</a></li>
+            <li> <a href="#Notification">Uzma Ahmed</a></li>
+            <li> <a href="#Notification">Ali Abbas</a></li>
+            <li> <a href="#Notification">S.K.Ali</a></li>
+            <li> <a href="#Notification">More...</a></li>
+        </ul>
+
+    </div>
+
+<div style="float:right;border:solid; height:508px;width:261px;background-color:#585858">
+
+</div>
+<div style=" height:508px;width:835px;float:right">
+    <div class="main-search" id="GettingStarted">
+        <form>
+            <label>Mehwish Khan</label>
+            <input type="text" class="form-control" placeholder="Hi! Do may i know you" />
+            <br/>
+            <input type="text" style="width:830px; height:50px;" />
+             <br/>
+            <input type="button" value="Send/Reply" style="float:right" />
+        </form>
+    </div>
+    <div class="main-search" id="MainStructure">
+        <form>
+            <label>Aliya Ali</label>
+            <input type="text" class="form-control" placeholder="Hello.. whats up??? how you doing.... reply soon as possible :)" /> <br />
+            <input type="text" style="width:830px; height:50px;" />
+            <br />
+            <input type="button" value="Send/Reply" style="float:right" />
+        </form>
+    </div>
+    <div class="main-search" id="Message">
+        <form>
+            <label>M. Umer</label>
+            <input type="text" class="form-control" placeholder="hey!!!! lets play a game" /> <br/>
+            <input type="button" value="View" style="float:right" />
+        </form>
+    </div>
+</div>

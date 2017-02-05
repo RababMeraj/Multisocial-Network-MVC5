@@ -1,0 +1,83 @@
+﻿<link href="~/css/animate.css" rel="stylesheet" />
+<link href="~/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/css/font-awesome.min.css" rel="stylesheet" />
+<link href="~/css/jquery.easy-pie-chart.css" rel="stylesheet" />
+<link href="~/css/main.css" rel="stylesheet" />
+<link href="~/css/simple-sidebar.css" rel="stylesheet" />
+<link href="~/css/styles-blue.css" rel="stylesheet" />
+<link href="~/css/styles-orange.css" rel="stylesheet" />
+<link href="~/css/styles-red.css" rel="stylesheet" />
+<link href="~/css/styles.css" rel="stylesheet" />
+<script src="~/js/bootstrap.min.js"></script>
+<script src="~/js/common.js"></script>
+<script src="~/js/jquery-1.11.1.min.js"></script>
+<section class="well " style="margin:0 auto">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>User Name</h2>
+
+                <img src="~/img/1.PNG" />
+            </div>
+            <div class="col-md-6">
+                <ol class="breadcrumb">
+                    <li>@Html.ActionLink("Profile", "Profile", "Home")</li>
+                    <li>@Html.ActionLink("Home", "Home", "Home")</li>
+                    <li>@Html.ActionLink("Messages", "msg", "Home")</li>
+                    <li>@Html.ActionLink("Notification", "noti", "Home")</li>
+                    <li>@Html.ActionLink("Settings", "sett", "Home")</li>
+                    <li>@Html.ActionLink("LogOut", "Login", "Home")</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+</section>
+<div style="float:left;border:solid; height:5008px;width:250px;background-color:#585858">
+    <div>
+        <ul @*class="sidebar-nav"*@ @*style="border:dashed"*@
+
+            <li> @Html.ActionLink("Profile", "Profile", "Home") <span class="fa-fa-angle-down"></span></li>
+            <ul>
+                <li><a href="#BegOfPage">Edit Profile</a></li>
+                <li><a href="#PageHead">Photos</a></li>
+                <li><a href="#Header">Friends</a></li>
+                <li><a href="#Sections">Family</a></li>
+
+            </ul>
+            <li> <a href="#Footer">Info</a></li>
+        <ul>
+            <li><a href="#edit_info"></a></li>
+        </ul>
+ 
+        </ul>
+    </div>
+</div>
+<div style=" height:508px;width:1069px;float:right">
+
+    <div class="page-content inset">
+        <div id="OverView">
+
+        </div>
+        <!--Overview-->
+        
+        
+        <div class="row" id="BegOfPage">
+            <div class="col-md-12">
+                <h3>Profile:</h3>
+            </div>
+        </div>
+
+        <div class="row" id="edit_info">
+            <div class="col-md-12">
+                <h3>Info</h3>
+            </div>
+        </div>
+        <div class="row" id="Thanks">
+            <div class="col-md-12">
+                <p>Thank You For Visiting Our Site , We Wish For You The Best Of Luck With Your Future :). SSN Team.</p>
+            </div>
+        </div>
+</div>
+</div>
