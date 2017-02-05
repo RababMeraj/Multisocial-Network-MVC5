@@ -76,6 +76,7 @@
         <!-- uncomment code for absolute positioning tweek see top comment in css -->
         <!-- <div class="absolute-wrapper"> </div> -->
         <!-- Menu -->
+<div class="col-md-2">
         <div class="side-menu">
 
             @*<nav class="navbar navbar-default" role="navigation">*@
@@ -172,22 +173,18 @@
             @*</nav>*@
 
         </div>
-        <!-- Main Content -->
-        <div class="container-fluid">
-            <div  class="side-body">
+</div>
 <div class="container">
-	<div class="row">
-		<h3>Status Upload Snipp</h3>
-	</div>
+        <!-- Main Content -->
+        <div class="container">
+            <div  class="side-body">
+<div >
     
-    <div class="row">
-    
-    <div class="container col-md-6">
-    						<div class="widget-area no-padding blank">
-								<div class=" container status-upload">
-									<form>
-										<textarea placeholder="What are you doing right now?" ></textarea>
-										<ul style="background-color:darkgray">
+    						<div class="col-md-9"  >
+								<div class="status-upload">
+									<form class="form-group well">
+										<textarea class="form-control" style="font-size:26px;" placeholder="What are you doing right now?" ></textarea>
+										<ul>
 											<li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Audio"><i class="fa fa-music"></i></a></li>
 											<li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Video"><i class="fa fa-video-camera"></i></a></li>
 											<li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Sound Record"><i class="fa fa-microphone"></i></a></li>
@@ -197,11 +194,14 @@
 									</form>
 								</div><!-- Status Upload  -->
 							</div><!-- Widget Area -->
-						</div>
         
+</div>
+        </div>
+
     </div>
 </div>
-                <div class="container">
+    
+            </div><div class="container">
                     <div class="row chat-window col-xs-5 col-md-3" id="chat_window_1" style="margin-left:10px;">
                         <div class="col-xs-12 col-md-12">
                             <div class="panel panel-default">
@@ -312,11 +312,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-    </div>
-    
 
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
